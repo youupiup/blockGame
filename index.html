@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div>操作说明：↑旋转，↓下落，←左移，→右移，空格：下落到底</div>
+    <div class="square" id="local">
+        <div class="title">我的游戏区域</div>
+        <div class="game" id="local-game"></div>
+        <div class="next" id="local-next"></div>
+        <div class="info">
+            <div>已用时：<span id="local-time">0</span>秒</div>
+            <div>已得分：<span id="local-score">0</span>分</div>
+            <div id="local-gameOver"></div>
+        </div>
+    </div>
+    <!-- 对方游戏区 -->
+    <!-- <div class="square" id="remote">
+        <div class="title">对方游戏区域</div>
+        <div class="game" id="remote-game"></div>
+        <div class="next" id="remote-next"></div>
+        <div class="info">
+            <div>已用时：<span id="remote-time">0</span>秒</div>
+            <div>已得分：<span id="remote-score">0</span>分</div>
+            <div id="remote-gameOver"></div>
+        </div>
+    </div> -->
+    <!-- 小方块坐标 -->
+    <script src="./js/square.js"></script>
+    <!-- 7种方块 -->
+    <script src="./js/squareFactory.js"></script>
+    <!-- 方块显示 -->
+    <script src="./js/game.js"></script>
+    <!-- 获取div和初始化 -->
+    <script src="./js/local.js"></script>
+    <!-- 执行初始化 -->
+    <script src="./js/script.js"></script>
+    <script src="./js/remote.js"></script>
+</body>
+
+</html>
